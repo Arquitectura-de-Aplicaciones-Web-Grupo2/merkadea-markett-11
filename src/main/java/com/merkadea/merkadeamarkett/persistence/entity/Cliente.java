@@ -11,13 +11,13 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer idCliente;
+    private String idCliente;
 
     private String nombre;
 
     private  String apellidos;
 
-    private Integer celular;
+    private long celular;
 
     private String direccion;
 
@@ -28,11 +28,11 @@ public class Cliente {
     private List<Compra>compras;
     //------------
 
-    public Integer getIdCliente() {
+    public String getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(Integer idCliente) {
+    public void setIdCliente(String idCliente) {
         this.idCliente = idCliente;
     }
 
@@ -52,11 +52,11 @@ public class Cliente {
         this.apellidos = apellidos;
     }
 
-    public Integer getCelular() {
+    public long getCelular() {
         return celular;
     }
 
-    public void setCelular(Integer celular) {
+    public void setCelular(long celular) {
         this.celular = celular;
     }
 
