@@ -16,8 +16,8 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    //este servicio que se encarga de obtener toda lalista de proiductos que exitien en nuesto sube m,ercado
-    @CrossOrigin(origins = "http://localhost:4200")
+    //este servicio que se encarga de obtener toda lalista de proiductos que exitien en nuesto sube m,ercad
+    @CrossOrigin(origins = {"http://localhost:4200","https://merkadea-market.web.app"})
     @GetMapping("/all")
     public ResponseEntity<List<Product>> getAll()
     {
